@@ -1,0 +1,126 @@
+/*Стиль кнопки*/
+#Mybtn{
+    width: 20%;
+    height: 20%;
+    color: orange;
+    background-color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    user-select: none;
+    padding: 15px 12px;
+    outline: none;
+    border: 3px solid #000;
+    border-radius: 20px;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.modal-btn{
+    width: 20%;
+    height: 20%;
+    color: orange;
+    background-color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    user-select: none;
+    padding: 15px 12px;
+    outline: none;
+    border: 3px solid #000;
+    border-radius: 20px;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.modal-btn:hover{
+    background-color: rgb(10, 10, 10);
+    color: rgb(52, 236, 15);
+}
+/*Эфекты при нажатии на кнопку "Просто зажмите курсор мыши на кнопке"*/
+#Mybtn:hover{
+    background-color: rgb(10, 10, 10);
+    color: rgb(52, 236, 15);
+}
+#Mybtn:active{
+    background:rgb(238, 10, 162) ;
+}
+
+/*Модалка*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0, 0.8);
+    
+}
+/*Внутри модалки контент*/
+.modal-content {
+    position: relative;
+    background-color: rgb(14, 13, 12);
+    margin: auto;
+    padding: 0;
+    border: 7px solid black;
+    width: 40%;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.8s;
+    animation-name: animodal;
+
+}
+
+/*Анимация появления модального окна*/
+@-webkit-keyframes animodal {
+    from {
+        left:-300px;
+        opacity:0
+        } 
+    to {
+        left:0;
+        opacity:1
+        }
+}
+
+@keyframes animodal {
+    from {
+        left:-300px;
+        opacity:0
+        }
+    to {
+        left:0;
+        opacity:1
+    }
+}
+
+/*Шапка модального окна*/
+.modal-header {
+    padding: 20px 30px;
+    background-color: tomato;
+}
+/*Крестик закрытия*/
+.close {
+    color: rgb(5, 5, 5);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+/*Плавная анимация при наведении на крестик закрытия "Токсичный крестик"*/
+.close:hover,.close:focus{
+    color: springgreen;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Внутри модального окна по центру блок*/
+.modal-body {
+    padding: 2px 15px;
+    background: yellow;
+    color: #000;
+}
+/*Нижняя часть модального окна*/
+.modal-footer {
+    padding: 2px 6px;
+    background-color: rgb(143, 140, 140);
+}
+
+
+
